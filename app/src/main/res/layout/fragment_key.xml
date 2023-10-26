@@ -25,6 +25,24 @@
             android:layout_marginBottom="130dp"
             android:orientation="vertical">
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="26dp"
+                app:cardCornerRadius="10dp">
+
+                <SearchView
+                    android:id="@+id/searchViewKeys"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:queryHint="Busca la llave aquí..."
+                    android:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:cornerRadius="10dp" />
+            </androidx.cardview.widget.CardView>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerKeys"
                 android:layout_width="match_parent"

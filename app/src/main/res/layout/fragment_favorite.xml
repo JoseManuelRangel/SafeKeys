@@ -24,6 +24,24 @@
             android:layout_marginTop="20dp"
             android:orientation="vertical">
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="26dp"
+                app:cardCornerRadius="10dp">
+
+                <SearchView
+                    android:id="@+id/searchViewFavorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:queryHint="Busca entre las favoritas..."
+                    android:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:cornerRadius="10dp" />
+            </androidx.cardview.widget.CardView>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerFavs"
                 android:layout_width="match_parent"

@@ -20,8 +20,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="13dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp"
             android:backgroundTint="@color/white"
             app:cardElevation="20dp"
             app:cardCornerRadius="10dp">
@@ -128,7 +129,7 @@
                         android:gravity="start"
                         android:padding="10dp"
                         android:importantForAutofill="no"
-                        android:inputType="text"
+                        android:inputType="textMultiLine"
                         android:textColor="@color/azure"
                         android:textColorHint="@color/lightGray"
                         tools:ignore="RtlSymmetry" />
@@ -168,8 +169,8 @@
                         android:id="@+id/newkeysfooter"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="55dp"
                         android:orientation="horizontal">
 
                         <Button

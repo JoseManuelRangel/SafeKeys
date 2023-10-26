@@ -204,4 +204,64 @@ class Database(context: Context): SQLiteOpenHelper(context, BD, null, 1) {
         result.close()
         return list
     }
+
+    fun searchKeysByName(keyName: String?, username: String): MutableList<Kei> {
+        val list: MutableList<Kei> = ArrayList()
+        /* Prepare the database to read inside it. */
+        val db = this.readableDatabase
+
+        /* The SQL Sentence */
+        val sql = "SELECT * FROM Kei WHERE idUser='$username' AND keyName LIKE '$keyName%'"
+
+        /* Read the result from the sql sentence and put them into a list. */
+        val result = db.rawQuery(sql, null)
+        if(result.moveToFirst()) {
+            do {
+                val k = Kei()
+                k.id = result.getInt(0)
+                k.keyName = result.getString(1)
+                k.keyUser = result.getString(2)
+                k.keyPass = result.getString(3)
+                k.keyDescription = result.getString(4)
+                k.isFavorite = result.getInt(5)
+                k.idCat = result.getString(6)
+                k.idUser = result.getString(7)
+                list.add(k)
+            } while(result.moveToNext())
+        }
+
+        /* Close the result and return the list. */
+        result.close()
+        return list
+    }
+
+    fun searchFavoritesKeysByName(keyName: String?, username: String): MutableList<Kei> {
+        val list: MutableList<Kei> = ArrayList()
+        /* Prepare the database to read inside it. */
+        val db = this.readableDatabase
+
+        /* The SQL Sentence */
+        val sql = "SELECT * FROM Kei WHERE idUser='$username' AND isFavorite=1 AND keyName LIKE '$keyName%'"
+
+        /* Read the result from the sql sentence and put them into a list. */
+        val result = db.rawQuery(sql, null)
+        if(result.moveToFirst()) {
+            do {
+                val k = Kei()
+                k.id = result.getInt(0)
+                k.keyName = result.getString(1)
+                k.keyUser = result.getString(2)
+                k.keyPass = result.getString(3)
+                k.keyDescription = result.getString(4)
+                k.isFavorite = result.getInt(5)
+                k.idCat = result.getString(6)
+                k.idUser = result.getString(7)
+                list.add(k)
+            } while(result.moveToNext())
+        }
+
+        /* Close the result and return the list. */
+        result.close()
+        return list
+    }
 }
