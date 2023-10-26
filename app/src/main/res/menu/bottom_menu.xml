@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="@string/homeMenu"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/homemenuicon"
+        android:iconTint="@color/azure" />
+
+    <item
+        android:id="@+id/categories"
+        android:title="@string/categoriesMenu"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/caticon"
+        android:iconTint="@color/azure" />
+
+    <item
+        android:id="@+id/holder"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:enabled="false" />
+
+    <item
+        android:id="@+id/favorites"
+        android:title="Favoritos"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/starmenuicon"
+        android:iconTint="@color/azure" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="Perfil"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/personicon"
+        android:iconTint="@color/azure" />
+</menu>

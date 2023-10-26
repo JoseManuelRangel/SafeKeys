@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerConstraintLayout"
+    android:background="@color/azure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rl2"/>
+
+    <LinearLayout
+        android:id="@+id/rl2"
+        android:background="@drawable/backgroundwhite"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/reemkufibold"
+            android:text="@string/registertitle"
+            android:textColor="@color/azure"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/registerUsername"
+            android:background="@drawable/backgroundedittextazure"
+            android:drawableStart="@drawable/personicon"
+            android:drawableTint="@color/azure"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:layout_width="340dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/reemkufiregular"
+            android:hint="@string/registerusername"
+            android:inputType="text"
+            android:textColor="@color/azure"
+            android:textColorHint="@color/lightGray"
+            android:importantForAutofill="no"
+            tools:ignore="RtlSymmetry, TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/linearUsernameError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/usernameImgError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/erroricon"
+                tools:ignore="ContentDescription, ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/usernameTxtError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/reemkufiregular"
+                android:text="@string/usernametxterror"
+                android:textColor="@color/red" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/registerPin"
+            android:background="@drawable/backgroundedittextazure"
+            android:drawableStart="@drawable/pinicon"
+            android:drawableTint="@color/azure"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:layout_width="340dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/reemkufiregular"
+            android:hint="@string/registerpin"
+            android:textColor="@color/azure"
+            android:textColorHint="@color/lightGray"
+            android:inputType="numberPassword"
+            android:importantForAutofill="no"
+            tools:ignore="RtlSymmetry, TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/linearPinError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/pinImgError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/erroricon"
+                tools:ignore="ContentDescription, ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/pinTxtError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/reemkufiregular"
+                android:text="@string/pintxterror"
+                android:textColor="@color/red"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/registerConfPin"
+            android:background="@drawable/backgroundedittextazure"
+            android:drawableStart="@drawable/confpinicon"
+            android:drawableTint="@color/azure"
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:layout_width="340dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/reemkufiregular"
+            android:hint="@string/registerconfpin"
+            android:inputType="numberPassword"
+            android:textColor="@color/azure"
+            android:textColorHint="@color/lightGray"
+            android:importantForAutofill="no"
+            tools:ignore="RtlSymmetry, TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/linearConfPinError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/confPinImgError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/erroricon"
+                tools:ignore="ContentDescription, ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/confPinTxtError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/reemkufiregular"
+                android:text="@string/confpintxterror"
+                android:textColor="@color/red"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/registerprogressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="330dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
+            android:max="9"
+            android:progress="0"
+            android:progressTint="#5DDD0D" />
+
+        <LinearLayout
+            android:id="@+id/registerButtonGroup"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/registerAcceptBtn"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azure"
+                android:elevation="10dp"
+                android:fontFamily="@font/reemkufibold"
+                android:shadowColor="@color/gray"
+                android:text="@string/registeracceptbtn"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp"
+                tools:ignore="ButtonStyle, DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/registerCancelBtn"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/azure"
+                android:elevation="10dp"
+                android:fontFamily="@font/reemkufibold"
+                android:shadowColor="@color/gray"
+                android:text="@string/registercancelbtn"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp"
+                tools:ignore="ButtonStyle,RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

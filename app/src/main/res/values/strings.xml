@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">SafeKeys</string>
+    <string name="titleApp">SAFEKEYS™</string>
+    <string name="subtitleApp">Guarde sus contraseñas de forma totalmente segura</string>
+    <string name="welcomeSubtitle">¡Bienvenido!</string>
+    <string name="welcomeSubdescription">¿Posee una cuenta en la app? \nSi no, registrese más abajo.</string>
+    <string name="welcomebtnRegister">REGISTRARSE</string>
+    <string name="welcomebtnLogin">INICIAR SESIÓN</string>
+    <string name="welcomeCopyrightText">Copyright © 2023 | José Manuel Rangel Muñoz</string>
+    <string name="loginSubtitle2">Introduzca la contraseña</string>
+    <string name="loginSubtitle1">Introduzca el usuario</string>
+    <string name="loginTitle">INICIAR SESIÓN</string>
+    <string name="loginacceptbutton">ACEPTAR</string>
+    <string name="logincancelbutton">CANCELAR</string>
+    <string name="loginregistertext"><u>¿No tiene aún una cuenta? Regístrese aquí.</u></string>
+    <string name="usernametxterror">Introduzca un usuario válido</string>
+    <string name="registerpin">Pin</string>
+    <string name="pintxterror">Introduzca un pin numérico de 5 dígitos</string>
+    <string name="registeracceptbtn">ACEPTAR</string>
+    <string name="registertitle">REGISTRARSE</string>
+    <string name="registerusername">Usuario</string>
+    <string name="registerconfpin">Confirmar pin</string>
+    <string name="confpintxterror">Este campo debe ser idéntico al pin</string>
+    <string name="registercancelbtn">CANCELAR</string>
+    <string name="categoriesMenu">Categorías</string>
+    <string name="homeMenu">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hwDescriptionMenu">Este es el menú principal de la app SafeKeys. \nBusca las categorías disponibles aquí.</string>
+    <string name="favcardtitle">Favoritos</string>
+    <string name="categorycardtitle">Categorias</string>
+    <string name="keycardtitle">Contraseñas</string>
+    <string name="infofooter">Click en la caja para ver las contraseñas</string>
+    <string name="txtnamekey">Introduzca un nombre</string>
+    <string name="txtpasskey">Introduzca una contraseña</string>
+    <string name="textspinnerkeys">Seleccione la categoría en el recuadro de abajo.</string>
+    <string name="txtconfpasskey">Confirme la contraseña</string>
+    <string name="keycheckfav">Presionando aquí, se añadirá a favoritos.</string>
+    <string name="keycardname">Name of the key</string>
+    <string name="keycardpass">*******</string>
+    <string name="cardcategoryquantity">: 0 keys registered</string>
+    <string name="ccn">CATEGORY NAME</string>
+</resources>

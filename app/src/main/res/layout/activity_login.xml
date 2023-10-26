@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azure"
+    tools:context=".view.activities.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/ll2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:background="@drawable/backgroundwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll1"
+        tools:ignore="TextSizeCheck,VisualLintBounds">
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/reemkufibold"
+            android:text="@string/loginTitle"
+            android:textColor="@color/azure"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/loginSubtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/reemkufibold"
+            android:text="@string/loginSubtitle1"
+            android:textSize="17sp"
+            android:textColor="@color/azure"/>
+
+        <EditText
+            android:id="@+id/loginUsername"
+            android:layout_width="340dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backgroundedittextazure"
+            android:drawableStart="@drawable/personicon"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/maxClearAzure"
+            android:fontFamily="@font/reemkufiregular"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColor="@color/azure"
+            android:textSize="15sp"
+            tools:ignore="LabelFor,RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/loginSubtitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/reemkufibold"
+            android:text="@string/loginSubtitle2"
+            android:textColor="@color/azure"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/loginPin"
+            android:layout_width="340dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backgroundedittextazure"
+            android:drawableStart="@drawable/pinicon"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/maxClearAzure"
+            android:fontFamily="@font/reemkufiregular"
+            android:importantForAutofill="no"
+            android:inputType="numberPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/azure"
+            android:textSize="15sp"
+            tools:ignore="LabelFor,RtlSymmetry,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/loginButtonGroup"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/loginAcceptButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azure"
+                android:elevation="10dp"
+                android:fontFamily="@font/reemkufibold"
+                android:shadowColor="@color/gray"
+                android:text="@string/loginacceptbutton"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/loginCancelButton"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/azure"
+                android:elevation="10dp"
+                android:fontFamily="@font/reemkufibold"
+                android:shadowColor="@color/gray"
+                android:text="@string/logincancelbutton"
+                android:textColor="@color/white"
+                app:cornerRadius="10dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loginRegisterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/reemkufiregular"
+            android:text="@string/loginregistertext"
+            android:textColor="@color/azure" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

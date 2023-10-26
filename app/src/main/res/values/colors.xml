@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray">#6A6A6A</color>
+    <color name="lightGray">#AFAFAF</color>
+    <color name="ultralightGray">#E8E6E6</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="azure">#1d3658</color>
+    <color name="clearAzure">#5882F1</color>
+    <color name="maxClearAzure">#86A7FF</color>
+    <color name="clearBlue">#A2B9F8</color>
+    <color name="deluge">#7b6cb2</color>
+    <color name="blueBell">#a893c2</color>
+    <color name="ultraclearRajah">#FDEFD3</color>
+    <color name="clearRajah">#FBDB99</color>
+    <color name="rajah">#FBC963</color>
+    <color name="gold">#C5932F</color>
+    <color name="cinnabar">#e15141</color>
+    <color name="red">#DD0202</color>
+    <color name="green">#77FD59</color>
+</resources>

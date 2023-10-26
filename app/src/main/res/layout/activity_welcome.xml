@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azure"
+    tools:context=".view.activities.WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/wl1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/wl2">
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/reemkufibold"
+            android:text="@string/titleApp"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/welcomeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/reemkufiregular"
+            android:text="@string/subtitleApp"
+            android:textColor="@color/white" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/welcomeAnimation"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/mainraw" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wl2"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backgroundwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wl1"
+        tools:ignore="VisualLintBounds,TextSizeCheck">
+
+        <LinearLayout
+            android:id="@+id/subwl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="130dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/welcomeSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/reemkufibold"
+                android:gravity="center"
+                android:text="@string/welcomeSubtitle"
+                android:textColor="@color/azure"
+                android:textSize="33sp" />
+
+            <TextView
+                android:id="@+id/welcomeSubDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/reemkufiregular"
+                android:gravity="center"
+                android:text="@string/welcomeSubdescription"
+                android:textColor="@color/azure"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/welcomeDesignLine"
+                android:layout_width="100dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/azure"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/welcomebtnRegister"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="@color/azure"
+                android:fontFamily="@font/reemkufibold"
+                android:text="@string/welcomebtnRegister"
+                android:textColor="@color/white"
+                android:elevation="10dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/welcomebtnLogin"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/azure"
+                android:fontFamily="@font/reemkufibold"
+                android:text="@string/welcomebtnLogin"
+                android:textColor="@color/white"
+                android:elevation="10dp"
+                app:cornerRadius="10dp" />
+
+            <TextView
+                android:id="@+id/welcomeCopyrightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/reemkufiregular"
+                android:text="@string/welcomeCopyrightText"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
