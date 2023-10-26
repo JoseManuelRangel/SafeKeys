@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
 
             /* If username and pin are not empty, it will search in the database for the data introduced previously and if exists, it will go to the menu. */
             if(username.isNotEmpty() && pin.isNotEmpty()) {
-                
+
             }
         }
     }
