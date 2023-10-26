@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newKeysLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azure"
+    tools:context=".view.fragments.NewKeysFragment">
+
+    <ScrollView
+        android:id="@+id/scrollKeys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:id="@+id/nkl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/newkeysbody"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <EditText
+                        android:id="@+id/txtNameKey"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/backgroundedittextazure"
+                        android:drawableStart="@drawable/keyicon"
+                        android:drawableTint="@color/azure"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/reemkufiregular"
+                        android:hint="@string/txtnamekey"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/azure"
+                        android:textColorHint="@color/lightGray"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/txtUserKey"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/backgroundedittextazure"
+                        android:drawableStart="@drawable/personicon"
+                        android:drawableTint="@color/azure"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/reemkufiregular"
+                        android:hint="Usuario"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/azure"
+                        android:textColorHint="@color/lightGray"
+                        tools:ignore="RtlSymmetry"/>
+
+                    <EditText
+                        android:id="@+id/txtPassKey"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/backgroundedittextazure"
+                        android:drawableStart="@drawable/pinicon"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/azure"
+                        android:fontFamily="@font/reemkufiregular"
+                        android:hint="@string/txtpasskey"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/azure"
+                        android:textColorHint="@color/lightGray"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/txtConfPassKey"
+                        android:layout_width="330dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/backgroundedittextazure"
+                        android:drawableStart="@drawable/confpinicon"
+                        android:drawablePadding="10dp"
+                        android:drawableTint="@color/azure"
+                        android:fontFamily="@font/reemkufiregular"
+                        android:hint="@string/txtconfpasskey"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:paddingStart="10dp"
+                        android:textColor="@color/azure"
+                        android:textColorHint="@color/lightGray"
+                        tools:ignore="RtlSymmetry" />
+
+                    <EditText
+                        android:id="@+id/txtDescKey"
+                        android:layout_width="330dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/backgroundedittextazure"
+                        android:fontFamily="@font/reemkufiregular"
+                        android:hint="Descripción"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:textColor="@color/azure"
+                        android:textColorHint="@color/lightGray"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/textSpinnerKeys"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/textspinnerkeys"
+                        android:textColor="@color/azure"
+                        android:fontFamily="@font/reemkufibold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerMenuKeys"
+                        android:background="@drawable/backgroundedittextazure"
+                        android:padding="5dp"
+                        android:layout_width="330dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp" />
+
+
+                    <CheckBox
+                        android:id="@+id/keyCheckFav"
+                        android:layout_width="330dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/reemkufiregular"
+                        android:text="@string/keycheckfav"
+                        android:textColor="@color/azure"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                    <LinearLayout
+                        android:id="@+id/newkeysfooter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnCreateKey"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="25dp"
+                            android:backgroundTint="@color/clearAzure"
+                            android:fontFamily="@font/reemkufibold"
+                            android:letterSpacing="0.1"
+                            android:text="AÑADIR"
+                            android:textColor="@color/white"
+                            app:cornerRadius="7dp"
+                            tools:ignore="ButtonStyle,HardcodedText" />
+
+                        <Button
+                            android:id="@+id/btnCleanKey"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:backgroundTint="@color/clearAzure"
+                            android:fontFamily="@font/reemkufibold"
+                            android:letterSpacing="0.1"
+                            android:text="LIMPIAR"
+                            android:textColor="@color/white"
+                            app:cornerRadius="7dp"
+                            tools:ignore="ButtonStyle,HardcodedText" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

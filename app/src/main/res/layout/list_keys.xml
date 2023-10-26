@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="114dp"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/cardKBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clearBlue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cardKMainImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/keyicon"
+            tools:ignore="ContentDescription"
+            app:tint="@color/azure" />
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/cl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/nameKeyIc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/keynameicon"
+                    app:tint="@color/azure"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/cardKeyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="1dp"
+                    android:text="@string/keycardname"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/reemkufiregular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/catKeyIc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/caticon"
+                    app:tint="@color/azure"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/cardKeyCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="1dp"
+                    android:fontFamily="@font/reemkufiregular"
+                    android:text="Category of the key"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cardKeyFav"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/starunselectedicon"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
