@@ -1,7 +1,10 @@
 package com.josemanuel.safekeys.view.activities
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.josemanuel.safekeys.R
 import com.josemanuel.safekeys.data.Category
@@ -9,7 +12,6 @@ import com.josemanuel.safekeys.data.Database
 import com.josemanuel.safekeys.databinding.ActivityMainmenuBinding
 import com.josemanuel.safekeys.view.fragments.CategoriesFragment
 import com.josemanuel.safekeys.view.fragments.FavoriteFragment
-import com.josemanuel.safekeys.view.fragments.KeyFragment
 import com.josemanuel.safekeys.view.fragments.MenuFragment
 import com.josemanuel.safekeys.view.fragments.NewKeysFragment
 import com.josemanuel.safekeys.view.fragments.ProfileFragment

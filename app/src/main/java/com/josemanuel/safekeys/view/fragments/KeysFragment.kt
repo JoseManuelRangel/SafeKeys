@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView.OnQueryTextListener
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.josemanuel.safekeys.R
 import com.josemanuel.safekeys.data.Database
 import com.josemanuel.safekeys.data.Kei
-import com.josemanuel.safekeys.databinding.FragmentKeyBinding
+import com.josemanuel.safekeys.databinding.FragmentKeysBinding
 
-class KeyFragment : Fragment() {
-    private var _binding: FragmentKeyBinding? = null
+class KeysFragment : Fragment() {
+    private var _binding: FragmentKeysBinding? = null
     private val binding get() = _binding!!
     private lateinit var adapter: KeysAdapter
 
@@ -21,7 +22,7 @@ class KeyFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         /* Binding variable to link up the layout components. */
-        _binding = FragmentKeyBinding.inflate(inflater, container, false)
+        _binding = FragmentKeysBinding.inflate(inflater, container, false)
 
         /* If the arguments aren't null, we save the username logged and search the keys of the account with the database. */
         if(arguments != null) {
@@ -60,6 +61,25 @@ class KeyFragment : Fragment() {
         val recyclerview = binding.recyclerKeys
         /* Adjusting the layout and the adapter of the recycler view. */
         recyclerview.layoutManager = LinearLayoutManager(context)
+        adapter.onItemClick = {
+            val keyFragment = KeyeFragment()
+            /* Bundle putting the username into itself to save the user in the next fragment. */
+            val bundle = Bundle()
+            bundle.putString("keyName", it.keyName)
+            bundle.putString("keyUser", it.keyUser)
+            bundle.putString("keyPass", it.keyPass)
+            bundle.putString("keyDescription", it.keyDescription)
+            bundle.putInt("isFavorite", it.isFavorite)
+            bundle.putString("idCat", it.idCat)
+            keyFragment.arguments = bundle
+
+            /* Changing the fragment. */
+            activity?.supportFragmentManager?.beginTransaction()
+                ?.replace(R.id.mml1, keyFragment)
+                ?.addToBackStack(null)
+                ?.commit()
+        }
+
         recyclerview.adapter = adapter
     }
 }

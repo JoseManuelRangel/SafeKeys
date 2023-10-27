@@ -7,6 +7,8 @@ import com.josemanuel.safekeys.R
 import com.josemanuel.safekeys.data.Kei
 
 class KeysAdapter(private var keyList: MutableList<Kei>): RecyclerView.Adapter<KeysViewHolder>() {
+
+    var onItemClick : ((Kei) -> Unit)? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KeysViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         /* Returning the view holder. */
@@ -22,6 +24,10 @@ class KeysAdapter(private var keyList: MutableList<Kei>): RecyclerView.Adapter<K
         /* Takes an item of the list to render it into the recyclerview. */
         val item = keyList[position]
         holder.render(item)
+
+        holder.itemView.setOnClickListener {
+            onItemClick?.invoke(item)
+        }
     }
 
     fun setFilteredList(keyList: MutableList<Kei>) {

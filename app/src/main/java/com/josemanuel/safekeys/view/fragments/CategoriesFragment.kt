@@ -11,7 +11,6 @@ import com.josemanuel.safekeys.data.Category
 import com.josemanuel.safekeys.data.Database
 import com.josemanuel.safekeys.data.Kei
 import com.josemanuel.safekeys.databinding.FragmentCategoriesBinding
-import com.josemanuel.safekeys.databinding.FragmentKeyBinding
 
 class CategoriesFragment : Fragment() {
     private var _binding: FragmentCategoriesBinding? = null

@@ -54,7 +54,7 @@ class MenuFragment : Fragment() {
 
         /* By clicking the safebox lottie, it will go to the keys fragment to view them. */
         binding.safeBoxMenu.setOnClickListener {
-            val keysFragment = KeyFragment()
+            val keysFragment = KeysFragment()
             /* Bundle putting the username into itself to save the user in the next fragment. */
             val bundle = Bundle()
             bundle.putString("username", user)

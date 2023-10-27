@@ -1,5 +1,6 @@
 package com.josemanuel.safekeys.data
 
+
 class Kei {
     var id: Int = 0
     var keyName: String = ""
@@ -10,7 +11,15 @@ class Kei {
     var idCat: String = ""
     var idUser: String = ""
 
-    constructor(keyName: String, keyUser: String, keyPass: String, keyDescription: String, isFavorite: Int, idCat: String, idUser: String) {
+    constructor(
+        keyName: String,
+        keyUser: String,
+        keyPass: String,
+        keyDescription: String,
+        isFavorite: Int,
+        idCat: String,
+        idUser: String
+    ) {
         this.keyName = keyName
         this.keyUser = keyUser
         this.keyPass = keyPass
