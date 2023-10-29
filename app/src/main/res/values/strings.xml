@@ -31,7 +31,7 @@
     <string name="categorycardtitle">Categorias</string>
     <string name="keycardtitle">Contraseñas</string>
     <string name="infofooter">Click en la caja para ver las contraseñas</string>
-    <string name="txtnamekey">Título de la llave</string>
+    <string name="txtnamekey">Título</string>
     <string name="txtpasskey">Contraseña</string>
     <string name="textspinnerkeys">Seleccione la categoría en el recuadro de abajo.</string>
     <string name="txtconfpasskey">Confirme la contraseña</string>

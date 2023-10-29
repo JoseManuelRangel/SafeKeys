@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
                 if(list.size == 1) {
                     Toast.makeText(this, "El usuario existe.", Toast.LENGTH_SHORT).show()
 
-                    val intent = Intent(this, MainMenuActivity::class.java)
+                    val intent = Intent(this, LoadingActivity::class.java)
                     intent.putExtra("username", username)
                     startActivity(intent)
                 } else {
