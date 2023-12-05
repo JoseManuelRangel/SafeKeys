@@ -20,7 +20,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="100dp"
             android:backgroundTint="@color/white"
@@ -43,9 +43,9 @@
 
                     <EditText
                         android:id="@+id/txtNameKey"
-                        android:layout_width="330dp"
+                        android:layout_width="310dp"
                         android:layout_height="50dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="5dp"
                         android:background="@drawable/backgroundedittextazure"
                         android:drawableStart="@drawable/keyicon"
@@ -62,9 +62,9 @@
 
                     <EditText
                         android:id="@+id/txtUserKey"
-                        android:layout_width="330dp"
+                        android:layout_width="310dp"
                         android:layout_height="50dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/backgroundedittextazure"
                         android:drawableStart="@drawable/personicon"
@@ -81,9 +81,9 @@
 
                     <EditText
                         android:id="@+id/txtPassKey"
-                        android:layout_width="330dp"
+                        android:layout_width="310dp"
                         android:layout_height="50dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/backgroundedittextazure"
                         android:drawableStart="@drawable/pinicon"
@@ -100,9 +100,9 @@
 
                     <EditText
                         android:id="@+id/txtConfPassKey"
-                        android:layout_width="330dp"
+                        android:layout_width="310dp"
                         android:layout_height="50dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/backgroundedittextazure"
                         android:drawableStart="@drawable/confpinicon"
@@ -119,9 +119,9 @@
 
                     <EditText
                         android:id="@+id/txtDescKey"
-                        android:layout_width="330dp"
+                        android:layout_width="310dp"
                         android:layout_height="120dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="20dp"
                         android:background="@drawable/backgroundedittextazure"
                         android:fontFamily="@font/reemkufiregular"
@@ -138,7 +138,7 @@
                         android:id="@+id/textSpinnerKeys"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="20dp"
                         android:text="@string/textspinnerkeys"
                         android:textColor="@color/azure"
@@ -148,17 +148,17 @@
                         android:id="@+id/spinnerMenuKeys"
                         android:background="@drawable/backgroundedittextazure"
                         android:padding="5dp"
-                        android:layout_width="330dp"
+                        android:layout_width="310dp"
                         android:layout_height="55dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginStart="20dp" />
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="30dp" />
 
 
                     <CheckBox
                         android:id="@+id/keyCheckFav"
-                        android:layout_width="330dp"
+                        android:layout_width="310dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="20dp"
                         android:fontFamily="@font/reemkufiregular"
                         android:text="@string/keycheckfav"
@@ -169,7 +169,7 @@
                         android:id="@+id/newkeysfooter"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginBottom="55dp"
                         android:orientation="horizontal">
 

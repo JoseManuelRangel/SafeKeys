@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:background="@color/azure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.ProfiledataFragment">
+
+    <ImageView
+        android:id="@+id/profiledataimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profiledaicon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/usernameDescr"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/usernameDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="190dp"
+        android:layout_marginTop="40dp"
+        android:text="Nombre de usuario"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:fontFamily="@font/reemkufibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profiledataimg" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usernameCard"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usernameDescr"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:id="@+id/usll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/uImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/personicon"
+                android:layout_gravity="center"
+                app:tint="@color/azure" />
+
+            <TextView
+                android:id="@+id/uText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Nombre del usuario"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/reemkufiregular"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/paswordDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="160dp"
+        android:layout_marginTop="30dp"
+        android:text="Contraseña de usuario"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:fontFamily="@font/reemkufibold"
+        app:layout_constraintBottom_toTopOf="@+id/passwordCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameCard" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/passwordCard"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paswordDescr"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:id="@+id/psll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/pinicon"
+                android:layout_gravity="center"
+                app:tint="@color/azure" />
+
+            <TextView
+                android:id="@+id/pText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Contraseña del usuario"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/reemkufiregular"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

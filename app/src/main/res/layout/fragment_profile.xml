@@ -1,7 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".view.fragments.ProfileFragment">
-</FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/plbody"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        android:background="@drawable/backgroundazure"
+        android:elevation="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ldp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/perfildatacard"
+                android:backgroundTint="@color/white"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/perfildataimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/profiledaicon"
+                        app:tint="@color/azure" />
+
+                    <TextView
+                        android:id="@+id/perfildatatext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:text="Datos de perfil"
+                        android:letterSpacing="0.05"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/reemkufibold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deleteusercard"
+                android:layout_width="290dp"
+                android:backgroundTint="@color/white"
+                android:layout_height="70dp"
+                android:layout_marginStart="50dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/deleteuserimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/deleteicon"
+                        app:tint="@color/azure" />
+
+                    <TextView
+                        android:id="@+id/deleteusertext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:text="Borrar usuario"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:letterSpacing="0.05"
+                        android:fontFamily="@font/reemkufibold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deletepasswordscard"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/deletepasswordsimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/deletepasswordsicon"
+                        app:tint="@color/azure" />
+
+                    <TextView
+                        android:id="@+id/deletepasswordstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:text="Borrar contraseñas"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/reemkufibold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cpp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/copyrightusecard"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/copyrightuseimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/copyrighticon"
+                        app:tint="@color/azure" />
+
+                    <TextView
+                        android:id="@+id/copyrightusetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:text="Copyright"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/reemkufibold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logoutcard"
+                android:layout_width="290dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/logoutimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logouticon"
+                        app:tint="@color/azure" />
+
+                    <TextView
+                        android:id="@+id/logouttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:text="Cerrar sesión"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/reemkufibold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

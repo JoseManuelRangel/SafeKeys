@@ -235,6 +235,30 @@ class Database(context: Context): SQLiteOpenHelper(context, BD, null, 1) {
         return list
     }
 
+    fun searchUsersByName(userName: String): MutableList<User> {
+        val list: MutableList<User> = ArrayList()
+        /* Prepare the database to read inside it. */
+        val db = this.readableDatabase
+
+        /* The SQL Sentence. */
+        val sql = "SELECT * FROM User WHERE username='$userName'"
+
+        /* Read the result from the sql sentence and put them into a list. */
+        val result = db.rawQuery(sql, null)
+        if(result.moveToFirst()) {
+            do {
+                val u = User()
+                u.username = result.getString(0)
+                u.pin = result.getString(1)
+                list.add(u)
+            } while(result.moveToNext())
+        }
+
+        /* Close the result and return the list. */
+        result.close()
+        return list
+    }
+
     fun searchFavoritesKeysByName(keyName: String?, username: String): MutableList<Kei> {
         val list: MutableList<Kei> = ArrayList()
         /* Prepare the database to read inside it. */
@@ -263,5 +287,40 @@ class Database(context: Context): SQLiteOpenHelper(context, BD, null, 1) {
         /* Close the result and return the list. */
         result.close()
         return list
+    }
+
+    fun deleteUser(username: String) {
+        /* Prepare the database to write inside it. */
+        val db = this.writableDatabase
+
+        /* The first SQL sentence. */
+        val sql1 = "DELETE FROM Kei WHERE idUser='$username'"
+        db.execSQL(sql1)
+
+        /* The second SQL sentence. */
+        val sql2 = "DELETE FROM Category WHERE idUser='$username'"
+        db.execSQL(sql2)
+
+        /* The third SQL sentence. */
+        val sql3 = "DELETE FROM User WHERE username='$username'"
+        db.execSQL(sql3)
+    }
+
+    fun deleteKey(keyname: String) {
+        /* Prepare the database to write inside it. */
+        val db = this.writableDatabase
+
+        /* The first SQL sentence. */
+        val sql1 = "DELETE FROM Kei WHERE keyName='$keyname'"
+        db.execSQL(sql1)
+    }
+
+    fun deleteAllKeys(username: String) {
+        /* Prepare the database to write inside it. */
+        val db = this.writableDatabase
+
+        /* The first SQL Sentence */
+        val sql1 = "DELETE FROM Kei WHERE idUser='$username'"
+        db.execSQL(sql1)
     }
 }
